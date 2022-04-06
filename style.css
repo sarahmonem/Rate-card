@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+body{
+    background-color: var(--VeryDarkBlue)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+}
+.card{
+    width: 350px;
+    background-color: var(--DarkBlue);
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.card1 img{
+    display: inline-block;
+    width: 10%;
+    background-color: var(--MediumGrey);
+    padding: 5px;
+    border-radius: 50%;
+}
+.card .title{
+    color: var(--White);
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+.card .text{
+color: var(--LightGrey);
+margin-top: 10px;
+}
+.card .numbs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+    
+}
+.card .numb{
+    background-color: var(--VeryDarkBlue);
+    color: var(--LightGrey);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.card .numb:hover{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+.numb.active{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.card button{
+    display: block;
+    width: 100%;
+    background-color: var(--Orange);
+    border-radius: 20px;
+    border: 0;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    color: var(--White);
+    
+}
+.card button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+#card2{
+    display: none;
+}
+.card2 img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+}
+.card2 .result{
+    background-color: var(--VeryDarkBlue);
+    width: fit-content;
+  margin: 0 auto;
+    border-radius: 40px;
+    color: var(--Orange)
+    ;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 35px;
+    margin-bottom: 15px;
+}
+.card2 .thanks{
+    color: var(--White);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+.card2 .parag{
+    font-size: 15px;
+    text-align: center;
+    color: var(--LightGrey);
+}
