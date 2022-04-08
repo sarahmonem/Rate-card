@@ -24,10 +24,10 @@ body{
     display: flex;
 }
 .card{
-    width: 400px;
+    width: 460px;
     background-color: var(--DarkBlue);
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-self: center;
