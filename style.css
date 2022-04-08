@@ -24,21 +24,22 @@ body{
     display: flex;
 }
 .card{
-    width: 460px;
+    width: 385px;
     background-color: var(--DarkBlue);
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-self: center;
     flex-direction: column;
     border-radius: 10px;
+    transition: all ease .5s;
 }
 .card1 img{
     display: inline-block;
     width: 10%;
     background-color: hsl(213deg 18% 22%);
-    padding: 5px;
+    padding: 10px;
     border-radius: 50%;
 }
 .card .title{
@@ -95,6 +96,7 @@ margin-top: 10px;
 }
 #card2{
     display: none;
+    transition: all ease .5s;
 }
 .card2 img{
     margin: 0 auto;
